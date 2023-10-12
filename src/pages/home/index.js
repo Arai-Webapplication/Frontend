@@ -13,12 +13,9 @@ const index = () => {
   const dispatch = useDispatch();
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(true);
-<<<<<<< Updated upstream
   const classID = getCookie('classID');
   const classTag = getCookie('classTag');
-=======
-  const classID = "6452a336612cf493afe90b30"
->>>>>>> Stashed changes
+  // const classID = "6452a336612cf493afe90b30"
   const getAllClass = async () => {
     try {
       setLoading(true);
@@ -47,11 +44,8 @@ const index = () => {
               <ToggleNav />
           </div>
           <div className="border-b border-636363 pb-5 m-auto max-w-xl lg:max-w-2xl 2xl:max-w-5xl">
-<<<<<<< Updated upstream
-              <CreatePost classID={classID} tag={classTag}/>
-=======
-            <CreatePost classID={classID}/>
->>>>>>> Stashed changes
+            <CreatePost classID={classID} tag={classTag}/>
+            {/* <CreatePost classID={classID}/> */}
           </div>
           </div>
           <p className="text-white text-center text-2xl">No data</p>
@@ -68,11 +62,8 @@ const index = () => {
             <ToggleNav />
           </div>
           <div className="border-b border-636363 pb-5">
-<<<<<<< Updated upstream
             <CreatePost classID={classID} tag={classTag}/>
-=======
-            <CreatePost classID={classID}/>
->>>>>>> Stashed changes
+            {/* <CreatePost classID={classID}/> */}
           </div>
           <div className="pt-5">
             {data.map((items) => (
